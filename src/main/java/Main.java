@@ -8,7 +8,7 @@ public class Main {
         customer.getContactInfo().sendMessage();
 
 
-        Customer customer2 = new Customer("Samwise", "Gamgee", new VisaCard(0),new EmailContact("samwise@novi.nl"));
+        Customer customer2 = new Customer("Samwise", "Gamgee", new VisaCard(0),new SmsContact("0612345678"));
         customer2.getCreditCard().pay(100);
 
         customer2.printName();

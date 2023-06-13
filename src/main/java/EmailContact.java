@@ -1,7 +1,15 @@
 public class EmailContact implements ContactInfo {
-    private final String email;
+    private String email;
 
     public EmailContact(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 
